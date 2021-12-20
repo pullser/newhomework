@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+%color {
+  color: white;
+}
+* {
+  font-family: "Cantarell", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  min-height: 100vh;
+  background: {
+    image: url(https://wallpaper.dog/large/17226855.jpg);
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+  .container {
+    max-width: 100%;
+    height: 1000px;
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      div {
+        display: flex;
+      }
+      .pepsi-icon {
+        img {
+          padding: 20px;
+          width: 100px;
+        }
+      }
+      .nav-left {
+        padding: 20px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        .inline-query {
+          padding: 20px;
+          a {
+            color: white;
+            text-decoration: none;
+            &::after {
+              content: "";
+              width: 5%;
+              border-radius: 10px;
+              height: 5px;
+              margin: auto;
+              display: block;
+              background: white;
+              transition: 0.5s;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .nav-right {
+        padding: 20px;
+        width: 275px;
+      }
+      .buy-link {
+        width: 100%;
+        height: 55px;
+        a {
+          padding: 10px 50px;
+          color: white;
+          text-decoration: none;
+          background-color: red;
+          text-align: center;
+          border-radius: 10px;
+        }
+      }
+      .square-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 44px;
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 120px;
+        background: #0e66c0;
+        .buy-link {
+          width: 100px;
+        }
+        .square-2 {
+          background: white;
+          width: 5px;
+          height: 5px;
+          margin: 2px;
+        }
+      }
+    }
+    .container2 {
+      display: flex;
+      justify-content: space-between;
+      .aside-col-left {
+        width: 10%;
+        max-width: 100%;
+        .arrow-left {
+          height: 45%;
+          width: 100px;
+          display: flex;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          .fas {
+            font-size: 40px;
+            opacity: 0.6;
+          }
+        }
+      }
+      .section {
+        max-width: 100%;
+        margin: 100px auto;
+        display: flex;
+        .section-left {
+          width: 800px;
+          max-width: 100%;
+          .col-1 {
+            width: 600px;
+            max-width: 100%;
+            margin: 25px;
+            #pepsiname {
+              font-size: 50px;
+              font-weight: 300;
+              @extend%color;
+            }
+            p {
+              @extend%color;
+              opacity: 0.7;
+            }
+          }
+          .col-2 {
+            padding: 20px;
+            #col-2-title {
+              padding: 10px 0px;
+              h1 {
+                @extend%color;
+                font-weight: 400;
+              }
+            }
+            .col-2-contain {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              .col-2-1 {
+                border-radius: 50px;
+                font-size: 10px;
+                width: 70px;
+                background: #0e66c0;
+                height: 130px;
+                @extend%color;
+                transition: 0.5s;
+                &:hover {
+                  background-color: rgb(150, 18, 18);
+                }
+                .col-2-1-1 {
+                  margin: 10px auto;
+                  background-color: #074898;
+                  width: 50px;
+                  height: 50px;
+                  text-align: center;
+                  padding-top: 14px;
+                  border-radius: 50%;
+                }
+                .col-2-1-2 {
+                  padding-top: 15px;
+                  h2 {
+                    font-size: 13px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            .col-3 {
+              padding: 20px 0;
+              width: 70%;
+              p {
+                @extend%color;
+              }
+            }
+            .col-4-btn {
+              padding: 20px 0;
+              a {
+                @extend%color;
+                background-color: red;
+                padding: 5px 50px;
+                border-radius: 20px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      .aside-col-right {
+        position: relative;
+        width: 10%;
+        max-width: 100%;
+        .arrow-left {
+          height: 45%;
+          width: 100px;
+          display: flex;
+          @extend%color;
+          align-items: center;
+          justify-content: center;
+          .fas {
+            font-size: 40px;
+            opacity: 0.6;
+          }
+        }
+        .social-link {
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          padding-left: 60px;
+          .site {
+            @extend%color;
+            font-size: 20px;
+          }
+        }
+        .select-con {
+          position: absolute;
+          bottom: 0;
+          right: 40%;
+          #selectID {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: white;
+            option {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
